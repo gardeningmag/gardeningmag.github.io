@@ -94,7 +94,8 @@ button {
   transition: all ease-in-out 0.3s;
 }
 
-button:disabled {
+#a__button:disabled,
+#b__button:disabled {
   color: #c9c9c9;
   box-shadow: inset 7px 7px 15px #cdcdcd, inset -7px -7px 15px #ffffff;
   transition: all ease-in-out 0.3s;
@@ -105,7 +106,7 @@ button:disabled {
   border-radius: 12px 0 0 12px;
   justify-self: end;
   background: #e6e6e6;
-  color: #9b9b9b;
+  color: #777777;
 }
 
 #b__button {
@@ -113,7 +114,7 @@ button:disabled {
   border-radius: 0 12px 12px 0;
   justify-self: start;
   background: #e6e6e6;
-  color: #9b9b9b;
+  color: #777777;
 }
 
 .play__controls {
