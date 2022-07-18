@@ -48,13 +48,13 @@ const playIcon = '<i class="fa-solid fa-play"></i>';
 const pauseIcon = '<i class="fa-solid fa-pause"></i>';
 
 //Check for mobile to enable audio playback without waiting for download status.
-/*if (
+if (
   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent
   )
 ) {
   playButton.disabled = false;
-}*/
+}
 
 //Default loading state for each sound
 var soundAReady = false;

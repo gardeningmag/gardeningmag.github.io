@@ -50,12 +50,9 @@ body {
   grid-template-rows: 2fr 4fr;
 }
 
-header {
-}
-
 #logo{
   max-width: 100vw;
-  max-height: 33vh;
+  max-height: 30vh;
 
 }
 
@@ -152,11 +149,11 @@ footer {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   font-size: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .nav {
   font-family: "mariage_dregular";
   color:#E6E6E6;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
