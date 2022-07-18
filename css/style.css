@@ -1,0 +1,160 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'mariage_dregular';
+  src: url('mariage_d_regular-webfont.woff2') format('woff2'),
+       url('mariage_d_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  line-height: 1.5;
+  font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background: black;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 2fr 4fr;
+}
+
+header {
+  margin-bottom: 8rem;
+}
+
+#logo{
+  width: 400px;
+
+}
+
+.player__wrapper {
+  width: 300px;
+}
+
+#title {
+  color: #E6E6E6;
+}
+#artist {
+  color: #bdbdbd;
+}
+
+.ab__controls {
+  display: grid;
+  align-content: center;
+  align-items: baseline;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  font-size: 1rem;
+}
+
+button {
+  text-transform: uppercase;
+  border: none;
+  color: #E6E6E6;
+  width: 4rem;
+  padding: 0.75rem;
+  border-radius: 12px;
+  background: black;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+button:disabled {
+  color: #c9c9c9;
+  box-shadow: inset 7px 7px 15px #cdcdcd, inset -7px -7px 15px #ffffff;
+  transition: all ease-in-out 0.3s;
+}
+
+#a__button {
+  width: 8rem;
+  border-radius: 12px 0 0 12px;
+  justify-self: end;
+  background: #e6e6e6;
+  color: #9b9b9b;
+}
+
+#b__button {
+  width: 8rem;
+  border-radius: 0 12px 12px 0;
+  justify-self: start;
+  background: #e6e6e6;
+  color: #9b9b9b;
+}
+
+.play__controls {
+  margin-top: .5rem;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;  
+}
+
+.progress__container {
+  display: inline-flex;
+  height: .3rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  background: rgb(29, 29, 29);
+  cursor: pointer;
+  align-self: center;
+}
+
+.progress__bar {
+  background: #e6e6e6;
+  border-radius: 10px;
+  transition: all ease-in-out 0.03s;
+}
+
+#progress__fill {
+  width: 0%;
+}
+
+footer {
+  width: 350px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.nav {
+  font-family: "mariage_dregular";
+  color:#E6E6E6;
+  font-size: 2rem;
+}

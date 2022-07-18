@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="description" content="Mastering for Gulch Goblins"/>
+    <meta name="keywords" content="mastering, experimental, ambient, noise"/>
+    <meta name="author" content="Ashton Klassen"/>
+    <title>Ashton Klassen | Mastering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" /> 
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <img id="logo" src="images/logo.png " alt="AK Mastering for Gulch Goblins">
+    </div>
+    </header>
+    <div class="player__wrapper">
+        <div id="title"></div>
+        <div id="artist"></div>
+      <div class="progress__container" id="progress">
+        <div class="progress__bar" id="progress__fill"></div>
+      </div>
+      <div class="ab__controls">
+        <button
+          class="ab__button"
+          id="a__button"
+          onclick="playSoundA()"
+          disabled="true"
+        >
+          original
+        </button>
+        <button
+          class="ab__button"
+          id="b__button"
+          onclick="playSoundB()"
+          disabled="true"
+        >
+          Master
+        </button>
+      </div>
+      <div class="play__controls">
+        <button
+          id="prev__button"
+          onclick="prevSounds()"
+        >
+        <i class="fa-solid fa-backward"></i>
+        <button
+          class="play__pause__button"
+          id="play__button"
+          onclick="playPause()"
+        >
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button
+          id="next__button"
+          onclick="nextSounds()"
+        >
+        <i class="fa-solid fa-forward"></i>
+        </button>
+      </div>
+    </div>
+    <script src="./js/ab-player.js"></script>
+    <footer>
+      <a class="nav" href="https://www.instagram.com/arbor_acoustics/">follow?</a>
+      <a class="nav" href="mailto:ashton.richard.klassen@gmail.com">contact?</a>
+    </footer>
+  </body>
+</html>
