@@ -51,16 +51,16 @@ body {
 }
 
 header {
-  margin-bottom: 8rem;
 }
 
 #logo{
-  width: 400px;
+  width: 300px;
 
 }
 
 .player__wrapper {
   width: 300px;
+  align-self: center;
 }
 
 #title {
