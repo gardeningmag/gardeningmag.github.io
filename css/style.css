@@ -144,7 +144,7 @@ button {
 }
 
 footer {
-  width: 350px;
+  width: 300px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
