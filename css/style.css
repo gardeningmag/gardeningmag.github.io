@@ -50,7 +50,7 @@ body {
 }
 
 #logo{
-  width: 300px;
+  width: 320px;
 
 }
 
@@ -61,7 +61,7 @@ body {
 
 #title {
   color: #E6E6E6;
-
+  font-style: italic;
 }
 #artist {
   color: #bdbdbd;
@@ -99,7 +99,7 @@ button {
 }
 
 #a__button {
-  width: 7.5rem;
+  width: 8rem;
   border-radius: 12px 0 0 12px;
   justify-self: end;
   background: #e6e6e6;
@@ -107,7 +107,7 @@ button {
 }
 
 #b__button {
-  width: 7.5rem;
+  width: 8rem;
   border-radius: 0 12px 12px 0;
   justify-self: start;
   background: #e6e6e6;
