@@ -61,9 +61,11 @@ body {
 
 #title {
   color: #E6E6E6;
+
 }
 #artist {
   color: #bdbdbd;
+  font-style: italic;
 }
 
 .ab__controls {
