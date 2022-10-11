@@ -1,10 +1,12 @@
 const songs = [
+  "Angel's Mouth",
   "The Gods Sprinkled Daisies Onto the Earth",
-  "Temple of Spit",
+  "Tolerance Pavilion",
   "Warm Blood", 
 ];
 
 const artists = [
+  "S. Wurm",
   "Layia",
   "Levitating Mausoleum",
   "Rue Morgan",
