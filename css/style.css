@@ -6,6 +6,8 @@
 html,
 body {
   height: 100%;
+  line-height: 1.5;
+  font-family: 'Playfair Display', serif;
 }
 @font-face {
   font-family: 'mariage_dregular';
@@ -13,10 +15,6 @@ body {
        url('mariage_d_regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
-body {
-  line-height: 1.5;
-  font-family: 'Playfair Display', serif;
 }
 img,
 picture,
