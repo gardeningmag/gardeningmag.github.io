@@ -42,15 +42,39 @@ h6 {
   overflow-wrap: break-word;
 }
 
+h1 {
+  font-family: "mariage_dregular";
+  font-size: 2rem;
+  font-weight: 1;
+}
+
+a { 
+  text-decoration: none; 
+  color:#E6E6E6;
+}
+
+a:hover {
+  color: #bdbdbd;
+}
+
+header {
+  width: 300px;
+ 
+}
+
 body {
+  color: #E6E6E6;
   background: black;
   display: grid;
   justify-items: center;
   grid-template-rows: 2fr 4fr;
 }
 
+
+
 #logo{
-  width: 300px;
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -60,7 +84,6 @@ body {
 }
 
 #title {
-  color: #E6E6E6;
   font-style: italic;
 }
 #artist {
@@ -116,7 +139,7 @@ button {
 
 .play__controls {
   margin-top: .5rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;  
@@ -148,12 +171,19 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  font-size: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.work {
+  font-size: .9rem;
+  text-decoration: none;
+  width: 300px;
 }
 
 .nav {
   font-family: "mariage_dregular";
-  color:#E6E6E6;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
 }
