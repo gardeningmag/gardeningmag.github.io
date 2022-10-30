@@ -62,7 +62,7 @@ header {
 
 body {
   color: #E6E6E6;
-  background: black;
+  background: #0a0a0a;
   display: grid;
   justify-items: center;
   grid-template-rows: 2fr 4fr;
@@ -106,7 +106,7 @@ button {
   width: 4rem;
   padding: 0.5rem;
   border-radius: 12px;
-  background: black;
+  background: #0a0a0a;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
 }
