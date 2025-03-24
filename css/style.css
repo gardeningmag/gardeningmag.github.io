@@ -8,11 +8,16 @@ body {
   height: 100%;
   line-height: 1.5;
   font-family: 'Playfair Display', serif;
+  font-size: 16 px;
+  font-weight: 400;
+  color: #E6E6E6;
+  background: #0a0a0a;
+  display: grid;
+  justify-items: center;
 }
 @font-face {
-  font-family: 'mariage_dregular';
-  src: url('mariage_d_regular-webfont.woff2') format('woff2'),
-       url('mariage_d_regular-webfont.woff') format('woff');
+  font-family: 'mariage';
+  src: url('mariage.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -21,7 +26,6 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
   max-width: 100%;
 }
 input,
@@ -41,37 +45,53 @@ h6 {
 }
 
 h1 {
-  font-family: "mariage_dregular";
-  font-size: 2rem;
-  font-weight: 1;
+  font-family: "mariage";
+  font-size: 3.5em;
+  font-weight: 400;
+  line-height: 1;
+}
+
+h2 {
+  font-family: "mariage";
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 1;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #bdbdbd;
+  padding-bottom: 1em;
+}
+
+p {
+  margin: 0.8em;
 }
 
 a { 
   text-decoration: none; 
-  color:#E6E6E6;
+  color: #E6E6E6;
 }
 
 a:hover {
   color: #bdbdbd;
+  transition: all 0.3s;
 }
 
 header {
   width: 300px;
- 
-}
-
-body {
-  color: #E6E6E6;
-  background: #0a0a0a;
-  display: grid;
   justify-items: center;
-  grid-template-rows: 2fr 4fr;
+  padding-top: 2em;
 }
 
-#logo{
-  margin: 0;
-  padding: 0;
-
+#about{
+  width: 300px;
+  text-align: center;
+  font-style: italic;
+  color: #bdbdbd;
+  font-size: 1.25em;
 }
 
 .player__wrapper {
@@ -80,12 +100,11 @@ body {
 }
 
 #title {
-  font-style: italic;
   margin-top: 2em;
+  font-style: italic;
 }
 #artist {
   color: #bdbdbd;
-  font-style: italic;
 }
 
 .ab__controls {
@@ -96,16 +115,15 @@ body {
   justify-content: center;
   justify-items: center;
   width: 100%;
-  font-size: 1rem;
 }
 
 button {
   text-transform: uppercase;
   border: none;
   color: #E6E6E6;
-  width: 4rem;
-  padding: 0.5rem;
-  border-radius: 12px;
+  width: 4em;
+  padding: 0.5em;
+  border-radius: 6px;
   background: #0a0a0a;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
@@ -113,40 +131,38 @@ button {
 
 #a__button:disabled,
 #b__button:disabled {
-  color: #c9c9c9;
-  box-shadow: inset 7px 7px 15px #cdcdcd, inset -7px -7px 15px #ffffff;
+  color: #a7a7a7;
+  box-shadow: inset 7px 7px 15px #1d1d1d, inset -7px -7px 15px #121212;
   transition: all ease-in-out 0.3s;
 }
 
 #a__button {
-  width: 8rem;
-  border-radius: 12px 0 0 12px;
+  width: 8em;
+  border-radius: 6px 0 0 6px;
   justify-self: end;
-  background: #e6e6e6;
-  color: #777777;
+  background: #313131;
 }
 
 #b__button {
-  width: 8rem;
-  border-radius: 0 12px 12px 0;
+  width: 8em;
+  border-radius: 0 6px 6px 0;
   justify-self: start;
-  background: #e6e6e6;
-  color: #777777;
+  background: #313131;
 }
 
 .play__controls {
-  margin-top: .5rem;
-  font-size: 1.6rem;
+  margin-top: .5em;
+  font-size: 1.5em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;  
+  justify-items: center; 
 }
 
 .progress__container {
   display: inline-flex;
-  height: .4rem;
+  height: .5em;
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5em;
   border-radius: 10px;
   background: rgb(29, 29, 29);
   cursor: pointer;
@@ -163,30 +179,33 @@ button {
   width: 0%;
 }
 
-footer {
-  width: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  margin-bottom: 1rem;
-}
-
 .work {
-  font-size: .9rem;
-  text-decoration: none;
   width: 300px;
+  font-size: 1em;
+  text-decoration: none;
   margin-top: 2em;
   line-height: 1.25;
 }
 
+.pricing {
+  width: 300px;
+  font-size: 1em;
+  margin-top: 2em;
+  line-height: 1.5;
+}
+
 .entry {
-  margin: .5em;
+  margin: 0.9em;
+}
+
+footer {
+  justify-items: center;
+  margin-top: 3em;
+ 
 }
 
 .nav {
-  font-family: "mariage_dregular";
-  font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  text-decoration: underline;
+  font-weight: 600;
+  padding-bottom: 4em;
+  font-size: 1em;
 }
