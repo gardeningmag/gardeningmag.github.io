@@ -17,9 +17,11 @@ body {
 }
 @font-face {
   font-family: 'mariage';
-  src: url('mariage.woff') format('woff');
-  font-weight: normal;
+  src: url('Mariage.woff2') format('woff2'),
+      url('Mariage.woff') format('woff');
+  font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
 img,
 picture,
@@ -60,7 +62,7 @@ h2 {
 
 h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: 400;
   color: #bdbdbd;
   padding-bottom: 1em;
